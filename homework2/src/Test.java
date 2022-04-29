@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -65,7 +66,7 @@ public class Test {
         System.out.println(max(1.5,1.6));
     }
 
-    public static void main(String[] args) {
+    public static void main5(String[] args) {
         Scanner scaneer=new Scanner(System.in);
         int n= scaneer.nextInt();
         int q=1;
@@ -73,6 +74,16 @@ public class Test {
             q*=j;
         }
         System.out.println(q);
+    }
+
+    public static void main(String[] args) {
+
+        int[] array={1,2,3,4,5};
+        for (int x:array) {
+            System.out.println(x+" ");
+        }
+        String ret=Arrays.toString(array);
+        System.out.println(ret);
     }
 }
 
