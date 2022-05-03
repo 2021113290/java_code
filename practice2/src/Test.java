@@ -24,7 +24,7 @@ public class Test {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         int[] arr = new int[6];
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < arr.length; i++) {
@@ -41,4 +41,17 @@ public class Test {
         }
         System.out.println(Arrays.toString(arr));
     }
+
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            int a = scanner.nextInt();
+            int b = scanner.nextInt();
+            scanner.close();
+            //a和b的值互换
+            if(a<b) a=a+b-(b=a);
+            System.out.printf("%d %d %d %d %d",a+b,a-b,a*b,a/b,a%b);
+
+
+        }
+
 }
