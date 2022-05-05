@@ -60,7 +60,7 @@ public class Test {
         int length = s[s.length - 1].length();
         System.out.println(length);
     }
-    public static void main(String[] args) {
+    public static void main5(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         int length = str.length();
@@ -73,5 +73,12 @@ public class Test {
         }
         System.out.println(count);
     }
+        public static void main(String[] args){
+            Scanner s = new Scanner(System.in);
+            String input1= s.nextLine();
+            String input2 = s.nextLine();
+            String split3 = input1.toUpperCase().replaceAll(input2.toUpperCase(),"");
+            System.out.println(input1.length() - split3.length());
+        }
 
 }
