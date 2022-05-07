@@ -73,7 +73,7 @@ public class Test {
         }
         System.out.println(count);
     }
-        public static void main(String[] args){
+        public static void main6(String[] args){
             Scanner s = new Scanner(System.in);
             String input1= s.nextLine();
             String input2 = s.nextLine();
@@ -81,4 +81,11 @@ public class Test {
             System.out.println(input1.length() - split3.length());
         }
 
+
+
+        public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+            double number = in.nextDouble();
+            System.out.println((int) (number + 0.5));
+        }
 }
