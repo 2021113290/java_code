@@ -83,9 +83,28 @@ public class Test {
 
 
 
-        public static void main(String[] args) {
+        public static void main7(String[] args) {
             Scanner in = new Scanner(System.in);
             double number = in.nextDouble();
             System.out.println((int) (number + 0.5));
         }
+        public static void main(String[] args){
+            Scanner in=new Scanner(System.in);
+            String a=in.next();
+            System.out.println(getString(a));
+        }
+        public static  String getString(String a){
+            char[] chararr = a.toCharArray();
+            for(int i=0;i<chararr.length/2;i++){
+                char tmp=chararr[i];
+                chararr[i]=chararr[chararr.length-1-i];
+                chararr[chararr.length-1-i]=tmp;
+            }
+            return new String(chararr);
+        }
+        public static  String getString1(String a){
+            return new StringBuilder(a).reverse().toString();
+        }
+
+
 }
