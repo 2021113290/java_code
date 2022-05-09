@@ -13,10 +13,19 @@ public class Test {
             System.out.println(x+" ");
         }
     }
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         int [] array={1,2,3};
         transform(array);
+    }
 
+    public static void main(String[] args) {
+        int []array=new int [100];
+        int i=1;
+        for (int x:array
+             ) {
+            x=i++;
+            System.out.println(x+" ");
+        }
     }
 
 
