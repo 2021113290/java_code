@@ -18,15 +18,17 @@ public class Test {
         transform(array);
     }
 
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         int []array=new int [100];
         int i=1;
         for (int x:array
              ) {
             x=i++;
-            System.out.println(x+" ");
+            System.out.print(x+" ");
         }
     }
 
+    public static void main(String[] args) {
 
+    }
 }
