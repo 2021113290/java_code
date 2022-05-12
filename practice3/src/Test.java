@@ -13,7 +13,7 @@ public class Test {
             strb.reverse();
             System.out.println(strb.toString());
         }
-    public static void main(String[] args){
+    public static void main2(String[] args){
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();    //读取数字
         int n = 0;    //计数变量
@@ -24,4 +24,14 @@ public class Test {
         }
         System.out.println(n);
     }
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            while (sc.hasNext()) {
+                // 输入字符串和k
+                String str = sc.next();
+                int k = sc.nextInt();
+                // 直接使用String的substring方法输出结果
+                System.out.println(str.substring(0, k));
+            }
+        }
 }

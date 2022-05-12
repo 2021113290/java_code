@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63f2e0bb-cd13-499d-9e9e-6813e5967150" name="Changes" comment="输入一个整数，将这个整数以字符串的形式逆序输出" />
+    <list default="true" id="63f2e0bb-cd13-499d-9e9e-6813e5967150" name="Changes" comment="输入一个 int 型的正整数，计算出该 int 型数据在内存中存储时 1 的个数。" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,13 +28,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
@@ -65,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652198038483</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="输入一个 int 型的正整数，计算出该 int 型数据在内存中存储时 1 的个数。">
+      <created>1652282670436</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652282670436</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,21 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="输入一个整数，将这个整数以字符串的形式逆序输出" />
-    <option name="LAST_COMMIT_MESSAGE" value="输入一个整数，将这个整数以字符串的形式逆序输出" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Test.java</url>
-          <line>8</line>
-          <properties class="Test" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="输入一个 int 型的正整数，计算出该 int 型数据在内存中存储时 1 的个数。" />
+    <option name="LAST_COMMIT_MESSAGE" value="输入一个 int 型的正整数，计算出该 int 型数据在内存中存储时 1 的个数。" />
   </component>
 </project>
