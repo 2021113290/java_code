@@ -24,7 +24,7 @@ public class Test {
         }
         System.out.println(n);
     }
-        public static void main(String[] args) {
+        public static void main3(String[] args) {
             Scanner sc = new Scanner(System.in);
             while (sc.hasNext()) {
                 // 输入字符串和k
@@ -33,5 +33,29 @@ public class Test {
                 // 直接使用String的substring方法输出结果
                 System.out.println(str.substring(0, k));
             }
+        }
+        public static void main4(String arg[]){
+            Scanner sc=new Scanner(System.in);
+            int sum=0;
+            while(sc.hasNext()){
+                String str=sc.nextLine();
+                String[] s=str.split(" ");
+                for(int i=0;i<s.length;i++){
+                    sum+=s[i].length();
+                }
+            }
+            System.out.print(sum);
+        }
+        public static void main(String arg[]){
+            Scanner sc=new Scanner(System.in);
+            int sum=0;
+            while(sc.hasNext()){
+                String str=sc.nextLine();
+                String[] s=str.split(" ");
+                for(int i=0;i<s.length;i++){
+                    sum+=s[i].length();
+                }
+            }
+            System.out.print(sum);
         }
 }
