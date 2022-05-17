@@ -46,7 +46,7 @@ public class Test {
             }
             System.out.print(sum);
         }
-        public static void main(String arg[]){
+        public static void main5(String arg[]){
             Scanner sc=new Scanner(System.in);
             int sum=0;
             while(sc.hasNext()){
@@ -58,4 +58,30 @@ public class Test {
             }
             System.out.print(sum);
         }
+      public static void main(String[] args)  {
+        Scanner sc = new Scanner(System.in);
+
+        while (sc.hasNextInt()) {
+            F(sc.nextInt());
+        }
+    }
+
+
+    public static void F(int num) {
+
+//        5x+3y+z/3=100;
+//        x+y+z=100;
+//        简化得 7x+4y=100;
+        int x,y,z,middle;
+        for(x = 0; x<=14;x++){
+            if((100 - 7*x) % 4 == 0){
+                y = (100 - 7*x) / 4;
+                z = 100-x-y;
+                System.out.print(x +" ");
+                System.out.print(y +" ");
+                System.out.print(z +" ");
+                System.out.println();
+            }
+        }
+    }
 }
