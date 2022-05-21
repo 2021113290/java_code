@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63f2e0bb-cd13-499d-9e9e-6813e5967150" name="Changes" comment="标题统计">
+    <list default="true" id="63f2e0bb-cd13-499d-9e9e-6813e5967150" name="Changes" comment="百鸡问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/practice3/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practice3/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652712864262</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="百鸡问题">
+      <created>1652800964061</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652800964061</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +116,7 @@
     <MESSAGE value="输入一个 int 型的正整数，计算出该 int 型数据在内存中存储时 1 的个数。" />
     <MESSAGE value="输入一个字符串和一个整数 k ，截取字符串的前k个字符并输出" />
     <MESSAGE value="标题统计" />
-    <option name="LAST_COMMIT_MESSAGE" value="标题统计" />
+    <MESSAGE value="百鸡问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="百鸡问题" />
   </component>
 </project>

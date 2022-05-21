@@ -84,4 +84,31 @@ public class Test {
             }
         }
     }
+    public class Solution {
+        public int[] reOrderArrayTwo (int[] array) {
+            int n = array.length;
+            int[] res = new int[n];
+            //统计奇数个数
+            int odd = 0;
+            //遍历统计
+            for(int i = 0; i < n; i++){
+                if(array[i] % 2 == 1)
+                    odd++;
+            }
+            //x与y分别表示答案中奇偶数的坐标
+            int x = 0, y = odd;
+            for(int i = 0; i < n; i++){
+                //奇数在前
+                if(array[i] % 2 == 1){
+                    res[x] = array[i];
+                    x++;
+                    //偶数在后
+                }else{
+                    res[y] = array[i];
+                    y++;
+                }
+            }
+            return res;
+        }
+    }
 }
