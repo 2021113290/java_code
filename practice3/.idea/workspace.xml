@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63f2e0bb-cd13-499d-9e9e-6813e5967150" name="Changes" comment="百鸡问题">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/practice3/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practice3/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-    </list>
+    <list default="true" id="63f2e0bb-cd13-499d-9e9e-6813e5967150" name="Changes" comment="调整数组顺序使奇数位于偶数前面(二)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652800964061</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="调整数组顺序使奇数位于偶数前面(二)">
+      <created>1653146616030</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653146616030</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +120,7 @@
     <MESSAGE value="输入一个字符串和一个整数 k ，截取字符串的前k个字符并输出" />
     <MESSAGE value="标题统计" />
     <MESSAGE value="百鸡问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="百鸡问题" />
+    <MESSAGE value="调整数组顺序使奇数位于偶数前面(二)" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整数组顺序使奇数位于偶数前面(二)" />
   </component>
 </project>
