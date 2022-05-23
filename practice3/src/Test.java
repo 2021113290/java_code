@@ -1,4 +1,6 @@
-import java.util.Scanner;/**
+import java.util.Scanner;
+import java.util.Calendar;
+/**
  * Created with IntelliJ IDEA.
  * Description:
  * User: xinyu
@@ -118,10 +120,22 @@ public class Test {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main7(String[] args) {
         Scanner in = new Scanner(System.in);
         while (in.hasNext()) {
             System.out.println(in.nextLine().replaceAll("[^A-Z]", "").length());
         }
     }
-}
+
+   public static void main(String[] args) {
+            Scanner in=new Scanner(System.in);
+            int y=in.nextInt();
+            int m=in.nextInt();
+            int d=in.nextInt();
+            Calendar c1=Calendar.getInstance();//实例化
+            c1.set(y, m-1, d);//注意月份从0开始
+            System.out.println(c1.get(Calendar.DAY_OF_YEAR));
+        }
+
+    }
+
