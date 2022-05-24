@@ -127,15 +127,35 @@ public class Test {
         }
     }
 
-   public static void main(String[] args) {
-            Scanner in=new Scanner(System.in);
-            int y=in.nextInt();
-            int m=in.nextInt();
-            int d=in.nextInt();
-            Calendar c1=Calendar.getInstance();//实例化
-            c1.set(y, m-1, d);//注意月份从0开始
-            System.out.println(c1.get(Calendar.DAY_OF_YEAR));
+    public static void main8(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int y = in.nextInt();
+        int m = in.nextInt();
+        int d = in.nextInt();
+        Calendar c1 = Calendar.getInstance();//实例化
+        c1.set(y, m - 1, d);//注意月份从0开始
+        System.out.println(c1.get(Calendar.DAY_OF_YEAR));
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double height = scanner.nextDouble();
+        double weight = scanner.nextDouble();
+        double kpi = weight / (height * height);
+
+        if (kpi > 24.9) {
+            System.out.print("偏胖");
+            return;
+        } else if (kpi >= 20.9) {
+            System.out.print("适中");
+            return;
+        } else if (kpi >= 18.5) {
+            System.out.print("苗条");
+            return;
+        } else {
+            System.out.print("偏瘦");
         }
 
     }
+}
 

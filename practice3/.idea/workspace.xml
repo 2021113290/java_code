@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63f2e0bb-cd13-499d-9e9e-6813e5967150" name="Changes" comment="统计大写字母个数">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-    </list>
+    <list default="true" id="63f2e0bb-cd13-499d-9e9e-6813e5967150" name="Changes" comment="计算日期到天数转换" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653231441600</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="计算日期到天数转换">
+      <created>1653318265369</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653318265369</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +136,7 @@
     <MESSAGE value="百鸡问题" />
     <MESSAGE value="调整数组顺序使奇数位于偶数前面(二)" />
     <MESSAGE value="统计大写字母个数" />
-    <option name="LAST_COMMIT_MESSAGE" value="统计大写字母个数" />
+    <MESSAGE value="计算日期到天数转换" />
+    <option name="LAST_COMMIT_MESSAGE" value="计算日期到天数转换" />
   </component>
 </project>
