@@ -1,6 +1,7 @@
 import com.sun.javaws.Main;
 
 import javax.jws.soap.SOAPBinding;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -8,6 +9,7 @@ import java.util.Scanner;
  * Description:1.任意输入1到100之间的整数，以0结束，然后计算每个数出现的次数。
  * •	定义两个数组a和b，并初始化，执行a=b后，修改b[0]，输出a和b。
  * •	定义一个数组a，并初始化，复制数组a。
+ * 1):左旋转字符串2)：数组中的字符串匹配3)：分割平衡字符串4)：重新格式化字符串
  * User: xinyu
  * Date: 2022-07-05
  * Time: 15:57
@@ -86,10 +88,74 @@ public class Test {
         }
         return num;
     }
-    public static void main(String[] args) {
+    public static void main6(String[] wordsm) {
+        ArrayList list = new ArrayList();
+        //i为每次循环需要比较的值
+        Scanner input=new Scanner(System.in);
+        String str=input.next().toString();
+        String[] words=str.split(",");
+       // for (int i = 0; i <words.length ; i++) {
+         //   System.out.println(words[i]+" ");
+        //}
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < words.length; j++) {
+                if (i == j || words[i].length() >= words[j].length()) continue;
+
+                if (words[j].contains(words[i])) {
+                    list.add(words[i]);
+                    break;
+                }
+            }
+        }
+        System.out.println(list);
+
+    }
+    public static void main5(String[] args) {
         Scanner input=new Scanner(System.in);
         String s=input.next();
         int k=balance(s);
         System.out.println(k);
     }
+
+        public static String reformat(String s) {
+            ArrayList<String> nums = new ArrayList<String>();
+            ArrayList<String> chars = new ArrayList<String>();
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) >= 'a') {
+                    chars.add(s.substring(i, i + 1));
+                } else {
+                    nums.add(s.substring(i, i + 1));
+                }
+            }
+            if (Math.abs(nums.size() - chars.size()) > 1) {
+                return "";
+            }
+            String o = "";
+            if (nums.size() < chars.size()) {
+                for (int i = 0; i < nums.size(); i++) {
+                    o = o + chars.get(i);
+                    o = o + nums.get(i);
+                }
+                o = o + chars.get(chars.size() - 1);
+            }
+            if (nums.size() > chars.size()) {
+                for (int i = 0; i < chars.size(); i++) {
+                    o = o + nums.get(i);
+                    o = o + chars.get(i);
+                }
+                o = o + nums.get(nums.size() - 1);
+            }
+            if (nums.size() == chars.size()) {
+                for (int i = 0; i < chars.size(); i++) {
+                    o = o + nums.get(i);
+                    o = o + chars.get(i);
+                }
+            }
+            return o;
+
+        }
+        public static void main(String[] args) {
+            String s = "covid2019";
+            System.out.println(reformat(s));
+        }
 }
