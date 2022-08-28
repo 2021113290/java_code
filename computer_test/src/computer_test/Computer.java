@@ -26,4 +26,10 @@ public class Computer {
         usb.work();
         usb.close();
     }
+    //重载
+    public void useDevice(BlueTooth bt){
+        bt.open();
+        bt.work();
+        bt.close();
+    }
 }

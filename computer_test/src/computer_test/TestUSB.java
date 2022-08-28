@@ -12,8 +12,10 @@ public class TestUSB {
         Computer computer=new Computer();
         computer.powerOn();//电脑开机
         USB usbmouse=new Mouse();
+        ///USB wirelessmouse=new WirelessMouse(true);
+        USB wirelessmouse=new WirelessMouse(false);
         Keybroad keybroad=new Keybroad();
-        computer.useDevice(keybroad);
+        computer.useDevice(wirelessmouse);
         computer.useDevice(usbmouse);
         computer.powerOff();
 

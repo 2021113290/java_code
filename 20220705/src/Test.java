@@ -20,9 +20,9 @@ public class Test {
         Scanner input=new Scanner(System.in);
         int []count=new int[101];
         for (int x:count) {
-            x=0;
+            x=0;//用foreach初始化数组
         }
-        while(true){
+        while(true){//计算每个数出现的次数
             int n= input.nextInt();
             count[n]++;
             if(n==0)
@@ -35,10 +35,10 @@ public class Test {
     }
 
     public static void main2(String[] args) {
-        int []a=new int[10];
+        int []a=new int[10];//定义两个数组
         int []b=new int[10];
         for (int i = 0; i < 10; i++) {
-            a[i]=0;
+            a[i]=0;//初始化
             b[i]=0;
         }
         a=b;
@@ -57,14 +57,14 @@ public class Test {
         int[] b = new int[a.length];
         for (int i=0; i<b.length; i++)
         {
-            b[i] = a[i];
+            b[i] = a[i];//复制
         }
         for (int i = 0; i <b.length ; i++) {
             System.out.println(b[i]);
         }
     }
 
-    public static void zuoxuan(String n,int k){
+    public static void zuoxuan(String n,int k){//左旋字符串，使用substring
         String a=n.substring(0,k);
         String b=n.substring(k);
         System.out.println(b+a);
@@ -79,7 +79,7 @@ public class Test {
         int num = 0;
         int n = 0;
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i)=='R')
+            if (s.charAt(i)=='R')//str.charAt(0)检索str中的第一个字符
                 n++;
             if (s.charAt(i) == 'L')
                 n--;
@@ -88,7 +88,7 @@ public class Test {
         }
         return num;
     }
-    public static void main6(String[] wordsm) {
+    public static void main8(String[] wordsm) {
         ArrayList list = new ArrayList();
         //i为每次循环需要比较的值
         Scanner input=new Scanner(System.in);
@@ -110,14 +110,14 @@ public class Test {
         System.out.println(list);
 
     }
-    public static void main5(String[] args) {
+    public static void main9(String[] args) {
         Scanner input=new Scanner(System.in);
         String s=input.next();
         int k=balance(s);
         System.out.println(k);
     }
 
-        public static String reformat(String s) {
+        public static String reformat(String s) {//重新格式化字符串
             ArrayList<String> nums = new ArrayList<String>();
             ArrayList<String> chars = new ArrayList<String>();
             for (int i = 0; i < s.length(); i++) {

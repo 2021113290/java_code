@@ -34,14 +34,14 @@ import java.util.Scanner;
         }
 
         public static void main(String[] args) {
-           /* Scanner input=new Scanner(System.in);
+           Scanner input=new Scanner(System.in);
             Clock clock=new Clock(input.nextInt(),input.nextInt(),input.nextInt(),input.nextInt(),input.nextInt(),input.nextInt());
             clock.start();
 
             for(;;) {
                 clock.start();
                 System.out.println(clock.toString());
-            }*/
+            }
         }
 
     }

@@ -99,22 +99,23 @@ public class NoteBook{
         // TODO Auto-generated method stub
 
         NoteBook nb=new NoteBook();
-        nb.addNote("111");
+       nb.addNote("111");
         nb.addNote("222");
+        /*
         String[] a = nb.list();
         for(int i=0; i < a.length; i++) {
             System.out.println(a[i]);
             nb.getDateTime();
-        }
+        }*/
 
-       /* NoteBook nb = new NoteBook();*/
 
-        /*nb.addNote("222");
+
+        nb.addNote("222");
         nb.translate(nb.notebook.get(0));
-        nb.translate(nb.notebook.get(1));*/
+        nb.translate(nb.notebook.get(1));
 
-       /* nb.removeNote(0);*/
-       /* Scanner input=new Scanner(System.in);
+       /* nb.removeNote(0);*//*
+        Scanner input=new Scanner(System.in);
        String[]keywords=new String[3];
         for (int i = 0; i < 3; i++) {
             keywords[i]=input.nextLine();
@@ -125,16 +126,23 @@ public class NoteBook{
 ////		nb.removeNote(0);
 ////		System.out.println(nb.getNote(1));
 //
-       /* String[] a = nb.list();
-		for(int i=0; i < a.length; i++) {
-			System.out.println(a[i]);
-		}*/
-
-        /*nb.recover(1);
-        a = nb.list();
+        String[] a = nb.list();
+        System.out.println("-------最初------------");
         for(int i=0; i < a.length; i++) {
             System.out.println(a[i]);
-        }*/
+        }
+        nb.removeNote(0);
+        a = nb.list();
+        System.out.println("-------删除后---------");
+        for(int i=0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+        nb.recover(1);
+        a = nb.list();
+        System.out.println("-------恢复后--------");
+        for(int i=0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
         /*HashSet<String> hs = new HashSet<String>();
         hs.add("first");
         hs.add("second");
