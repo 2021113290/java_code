@@ -10,6 +10,7 @@ import java.util.List;
  * Time: 20:58
  */
 public class Test {
+
     public static void main(String[] args) {
         CardDemo cardDemo=new CardDemo();
         List<Card> ret=cardDemo.buyDeskCard();
