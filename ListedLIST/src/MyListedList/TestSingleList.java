@@ -190,4 +190,108 @@ public class TestSingleList {
         }
         return slow;
     }
+    //*****链表分割、
+    public ListNode partition(int x){
+        ListNode bs=null;
+        ListNode be=null;
+        ListNode as=null;
+        ListNode ae=null;
+        ListNode cur=head;
+        while (cur != null) {
+            if (cur.val<x){
+                //插入到第一个段，一定用尾插，题目要求顺序不变
+                if (bs==null){//第一次插入元素，之前链表为空
+                    bs=cur;
+                    be=cur;
+                }else {
+                    be.next=cur;
+                    be=be.next;
+                }
+            }else {
+                //插入到第二个段中，一定用尾插
+                if (as==null){//第一次插入元素，之前链表为空
+                    as=cur;
+                    ae=cur;
+                }else {
+                    ae.next=cur;
+                    ae=ae.next;
+                }
+            }
+            cur=cur.next;
+        }
+        be.next=as;
+        if (as!=null){
+            ae.next=null;
+        }
+        return bs;
+    }
+    //****给一个链表，判断是不是回文,要求空间复杂度o（1）；
+    //如何能让指针从后往前走呢？1.找中间2.翻转3.往回走4.偶数个节点处理
+    public boolean chkPalindrome(){
+        ListNode fast=head;
+        ListNode slow=head;
+        while (fast!=null&&fast.next!=null){
+            fast=fast.next.next;
+            slow=slow.next;
+        }
+        //开始翻转
+        ListNode cur=slow.next;
+        while (cur!=null){
+            ListNode curNext=cur.next;
+            cur.next=slow;
+            slow=cur;
+            cur=curNext;
+        }
+        //开始判断回文
+        while (head!=slow){
+            if (head.val!=slow.val){
+                return false;
+            }
+            if (head.next==slow){
+                return true;
+            }
+            head=head.next;
+            slow=slow.next;
+        }
+        return true;
+    }
+//****两链表相交，是Y型不是X型
+    //解题思路：1.求两个链表的长度2.计算两个链表长度的差值3.让最长的链表走差值步4.两个链表一起走，相遇点就是相交的节点
+//判断链表是否有环
+    public boolean hasCycle(){
+        ListNode fast=head;
+        ListNode slow=head;
+        while (fast!=null&&fast.next!=null){
+            fast=fast.next.next;
+            slow=slow.next;
+            if (fast==slow){
+                break;
+            }
+        }
+        if (fast==null||fast.next==null){
+            return false;
+        }
+        return true;
+    }
+    //求环形链表的入口点
+    public ListNode detectCycle(ListNode head){
+        ListNode fast=head;
+        ListNode slow=head;
+        while (fast!=null&&fast.next!=null){
+            fast=fast.next.next;
+            slow=slow.next;
+            if (fast==slow){
+                break;
+            }
+        }
+        if (fast==null||fast.next==null){
+            return null;
+        }
+        slow=head;//原理是头节点到入口点的距离和相遇点到入口点的距离相等
+        while (slow!=fast){
+            fast=fast.next;
+            slow=slow.next;
+        }
+        return fast;
+    }
 }
