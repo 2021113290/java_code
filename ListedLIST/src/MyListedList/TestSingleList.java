@@ -1,5 +1,7 @@
 package MyListedList;
 
+import java.util.Stack;
+
 /**
  * Created with IntelliJ IDEA.
  * Description:
@@ -293,5 +295,30 @@ public class TestSingleList {
             slow=slow.next;
         }
         return fast;
+    }
+//递归实现，单链表的逆序打印
+    public void printList(ListNode head){
+        if (head==null){
+            return;
+        }
+        if (head.next==null){
+            System.out.println(head.val+" ");
+            return;
+        }
+        printList(head.next);
+        System.out.println(head.val+" ");
+    }
+    //非递归实现
+    public void printList2(){
+        Stack<ListNode> stack=new Stack<>();
+        ListNode cur=head;
+        while (cur!=null){
+            stack.push(cur);
+            cur=cur.next;
+        }
+        while (!stack.empty()){
+            ListNode top=stack.pop();
+            System.out.println(top.val+" ");
+        }
     }
 }
