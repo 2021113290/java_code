@@ -68,14 +68,58 @@ public class BinaryTree {
         ret.addAll(RightTree);
         return ret;
 }
+//遍历思路
 List<Integer> list=new ArrayList<>();
     public List<Integer> preorderTraversal2(TreeNode root) {
         if (root==null)return list;
         list.add((int) root.val);
-        preOrder(root.left);
-        preOrder(root.right);
+        preorderTraversal2(root.left);
+        preorderTraversal2(root.right);
         return list;
-}}
+}//中序遍历和后序遍历就是添加根在代码的位置不同
+    //获取树中节点的个数
+//子问题思路 获取树中节点的个数
+    int size(TreeNode root){
+        if (root==null){
+            return 0;
+        }
+        return size(root.left)+size(root.right)+1;
+    }
+    //遍历思路：只要遍历到了节点 就nodeSize++
+    public static int nodeSize;
+    void size2(TreeNode root){
+        if (root==null){
+            return ;
+        }
+        nodeSize++;
+        size2(root.left);
+        size2(root.right);
+    }
+    //求叶子节点个数
+    //子问题：左树的叶子+右树的叶子
+    int getLeafNodeCount(TreeNode root){
+        if (root==null){
+            return 0;
+        }
+        if (root.left==null&&root.right==null){
+            return 1;
+        }
+        return getLeafNodeCount(root.left)+getLeafNodeCount(root.right);
+    }
+    //遍历问题：遍历到叶子就++
+    public static int LeafSize;
+    void getLeafNodeCount2(TreeNode root){
+        if (root==null){
+            return;
+        }
+        if (root.left==null&&root.right==null){
+            LeafSize++;
+        }
+        getLeafNodeCount2(root.left);
+        getLeafNodeCount2(root.right);
+
+    }
+}
 
 
 
