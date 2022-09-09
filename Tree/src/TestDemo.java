@@ -17,5 +17,9 @@ public class TestDemo {
         System.out.println("叶点的个数1："+binaryTree.getLeafNodeCount(binaryTree.root));
         binaryTree.getLeafNodeCount2(binaryTree.root);
         System.out.println("叶点的个数2："+BinaryTree.LeafSize);
+        System.out.println("树的高度："+binaryTree.getHeight(binaryTree.root));
+        System.out.println("查找节点'E'："+binaryTree.find(binaryTree.root,'E').val);//
+        System.out.println("层序遍历：");
+        binaryTree.levelOrder(binaryTree.root);
     }
 }
