@@ -21,5 +21,7 @@ public class TestDemo {
         System.out.println("查找节点'E'："+binaryTree.find(binaryTree.root,'E').val);//
         System.out.println("层序遍历：");
         binaryTree.levelOrder(binaryTree.root);
+        System.out.println("是不是满二叉树：");
+        System.out.println(binaryTree.isCompleteTree(binaryTree.root));
     }
 }

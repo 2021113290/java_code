@@ -217,7 +217,7 @@ List<Integer> list=new ArrayList<>();
         return isSymmetricChild(leftTree.left,rightTree.right)&&isSymmetricChild(leftTree.right,rightTree.left);
     }
     //层序遍历
-    void levelOrder(TreeNode root){
+    public void levelOrder(TreeNode root){
         if (root==null)return;
         Queue<TreeNode> queue=new LinkedList<>();
         queue.offer(root);
@@ -233,6 +233,55 @@ List<Integer> list=new ArrayList<>();
         }
     }
     //1688求一棵树的左视图
+    //层序遍历，有返回值的
+    public List<List<Integer>> levelOrder2(TreeNode root){
+        List<List<Integer>> ret=new ArrayList<>();
+        if (root==null)return ret;
+        Queue<TreeNode> queue=new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()){
+            int size= queue.size();
+            List<Integer> row=new ArrayList<>();
+            while (size>0){
+                TreeNode cur=queue.poll();
+                size--;
+                row.add((int) cur.val);
+                if (cur.left!=null){
+                    queue.offer(cur.left);
+                }
+                if (cur.right!=null){
+                    queue.offer(cur.right);
+                }
+            }
+            ret.add(row);
+        }
+        return ret;
+    }
+    //判断一棵树是不是完全二叉树
+    boolean isCompleteTree(TreeNode root){
+        if (root==null)return true;
+        Queue<TreeNode> queue=new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()){
+            TreeNode cur=queue.poll();
+            if (cur!=null){
+                queue.offer(cur.left);
+                queue.offer(cur.right);
+            }else {
+                break;
+            }
+        }
+        while (!queue.isEmpty()){
+            TreeNode cur=queue.peek();
+            if (cur!=null){
+                return false;
+            }else {
+                queue.poll();
+            }
+        }
+        return true;
+    }
+    //
 }
 
 
